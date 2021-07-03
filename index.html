@@ -11,37 +11,35 @@
         {
             width: 90px;
         }
-        
+        #root
+        {
+            width: 80vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
     </style>
 </head>
-<body>
-    <div id="root" class="m-4"></div>
+<body class="bg-primary">
+    <div id="root" class=""></div>
     <div class="container">
         <div class="row justify-content-center">
-            <select class="form-select">
-                <option value="UAH">UAH</option>
-                <option value="UAH">UAH</option>
-                <option value="UAH">UAH</option>
-                <option value="UAH">UAH</option>
-                <option value="UAH">UAH</option>
+            <select class="form-select" id="ccy_with">
+
             </select>
-             <input type="image" name="image" src="img_3687.png" height="35" class="align-self-center col-2" style="width: 45px; padding: 0px;">
-            <select class="form-select">
-                <option value="UAH">UAH</option>
-                <option value="UAH">UAH</option>
-                <option value="UAH">UAH</option>
-                <option value="UAH">UAH</option>
-                <option value="UAH">UAH</option>
+             <input type="image" name="image" src="icons8-стрелка-100.png" height="45" class="align-self-center col-2" style="width: 45px; padding: 0px;">
+            <select class="form-select" id="ccy_in">
+
             </select>
         </div>
         <div class="row justify-content-center mt-2">
-            <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+            <input type="text" class="form-control" placeholder="Value" id="value">
             <div style="width: 45px;"></div>
-            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success" id="convert">Сonvert</button>
         </div>
         <div class="row justify-content-center mt-2">
-            <h3 class="text-primary w-auto p-0">12.635</h3>
-            <span class="blockquote w-auto p-0">USD</span>
+            <h3 class=" w-auto p-0 text-white" id="result"></h3>
+            <span class="blockquote w-auto p-0 text-white" id="result_ccy"></span>
         </div>
     </div>
     <script src="MyScript.js"></script>
